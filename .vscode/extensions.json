@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "editorconfig.editorconfig",
+        "ms-dotnettools.csdevkit",
+        "ms-dotnettools.csharp",
+        "geequlim.godot-tools",
+        "ms-vscode.mono-debug"
+    ]
+}

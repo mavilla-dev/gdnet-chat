@@ -1,0 +1,143 @@
+[gd_scene load_steps=2 format=3 uid="uid://bf7o6cmegtr1j"]
+
+[ext_resource type="Script" path="res://shared/features/chat/ChatNode.cs" id="1_hhemb"]
+
+[node name="Chat" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hhemb")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="Left" type="Control" parent="HBoxContainer"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+
+[node name="Panel" type="Panel" parent="HBoxContainer/Left"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Left/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Left/Panel/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Label" type="Label" parent="HBoxContainer/Left/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Chatroom Members:"
+
+[node name="Members" type="VBoxContainer" parent="HBoxContainer/Left/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="HBoxContainer/Left/Panel/MarginContainer/VBoxContainer/Members"]
+layout_mode = 2
+text = "Chatroom Members:"
+
+[node name="Label2" type="Label" parent="HBoxContainer/Left/Panel/MarginContainer/VBoxContainer/Members"]
+layout_mode = 2
+text = "Chatroom Members:"
+
+[node name="Label3" type="Label" parent="HBoxContainer/Left/Panel/MarginContainer/VBoxContainer/Members"]
+layout_mode = 2
+text = "Chatroom Members:"
+
+[node name="Label4" type="Label" parent="HBoxContainer/Left/Panel/MarginContainer/VBoxContainer/Members"]
+layout_mode = 2
+text = "Chatroom Members:"
+
+[node name="Label5" type="Label" parent="HBoxContainer/Left/Panel/MarginContainer/VBoxContainer/Members"]
+layout_mode = 2
+text = "Chatroom Members:"
+
+[node name="Label6" type="Label" parent="HBoxContainer/Left/Panel/MarginContainer/VBoxContainer/Members"]
+layout_mode = 2
+text = "Chatroom Members:"
+
+[node name="Label7" type="Label" parent="HBoxContainer/Left/Panel/MarginContainer/VBoxContainer/Members"]
+layout_mode = 2
+text = "Chatroom Members:"
+
+[node name="Label8" type="Label" parent="HBoxContainer/Left/Panel/MarginContainer/VBoxContainer/Members"]
+layout_mode = 2
+text = "Chatroom Members:"
+
+[node name="Right" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Panel" type="Panel" parent="HBoxContainer/Right"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Right/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Right/Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/Right/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Chat History:"
+
+[node name="MessageContainer" type="VBoxContainer" parent="HBoxContainer/Right/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Right/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="ClientName" type="Label" parent="HBoxContainer/Right/Panel/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "My Name Here: "
+
+[node name="Message" type="LineEdit" parent="HBoxContainer/Right/Panel/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Next message here..."
+
+[node name="SendButton" type="Button" parent="HBoxContainer/Right/Panel/MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Send"

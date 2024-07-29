@@ -1,0 +1,52 @@
+[gd_scene load_steps=2 format=3 uid="uid://bd301f87ew02r"]
+
+[ext_resource type="Script" path="res://shared/features/server_connect/ServerConnectNode.cs" id="1_f53v8"]
+
+[node name="ServerConnect" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_f53v8")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+offset_left = 20.0
+offset_top = 203.0
+offset_right = 666.0
+offset_bottom = 278.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 20
+
+[node name="LineEdit" type="LineEdit" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "localhost"
+alignment = 1
+
+[node name="JoinButton" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(200, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Join"
+
+[node name="HostButton" type="Button" parent="."]
+layout_mode = 1
+offset_left = 20.0
+offset_top = 103.0
+offset_right = 260.0
+offset_bottom = 182.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Host"
+
+[node name="DisplayName" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 26.0
+offset_right = 367.0
+offset_bottom = 85.0
+placeholder_text = "DisplayName"

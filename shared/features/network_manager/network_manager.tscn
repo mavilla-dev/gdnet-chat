@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dsbxcugrif1n1"]
+
+[ext_resource type="Script" path="res://shared/features/network_manager/NetworkManagerNode.cs" id="1_v7aho"]
+
+[node name="NetworkManager" type="Node"]
+script = ExtResource("1_v7aho")

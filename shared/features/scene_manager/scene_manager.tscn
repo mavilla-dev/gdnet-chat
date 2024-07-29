@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://cu7po1k3nce7p"]
+
+[ext_resource type="Script" path="res://shared/features/scene_manager/SceneManagerNode.cs" id="1_lr4sw"]
+[ext_resource type="PackedScene" uid="uid://bf7o6cmegtr1j" path="res://shared/features/chat/chat.tscn" id="2_8p06v"]
+
+[node name="SceneManager" type="Node"]
+script = ExtResource("1_lr4sw")
+ChatScene = ExtResource("2_8p06v")

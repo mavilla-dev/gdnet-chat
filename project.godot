@@ -1,0 +1,36 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="gdnet-chat"
+run/main_scene="res://shared/features/server_connect/server_connect.tscn"
+config/features=PackedStringArray("4.2", "C#", "Forward Plus")
+config/icon="res://icon.png"
+
+[autoload]
+
+NetworkManager="*res://shared/features/network_manager/network_manager.tscn"
+SceneManager="*res://shared/features/scene_manager/scene_manager.tscn"
+
+[display]
+
+window/size/window_width_override=576
+window/size/window_height_override=324
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[dotnet]
+
+project/assembly_name="gdnet-chat"
+
+[filesystem]
+
+import/blender/enabled=false
